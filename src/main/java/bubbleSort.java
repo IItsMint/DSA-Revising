@@ -4,7 +4,11 @@ public class bubbleSort {
 
     //Go through the array, one value at a time,
     //for each value compare the value with the next value,
-    //if the value the value is higher than the next one, swap the values, so that highest value goes to end.
+    //if the value the value is higher than the next one, swap the values, so that highest value goes to end,
+    //Go through the array as may times as there are values in the array.
+    //even if the array is sorted before validating every single index, program does not know that,
+    // so it has to validate every single indexes one by one.
+
 
     //time complexity of this algo is o(n^2) since we are using nested loops.
 
@@ -23,7 +27,7 @@ public class bubbleSort {
                 }
             }
         }
-
+        //we need this to see numbers.
         for(int num:nums){
             System.out.print(num+" ");
         }
